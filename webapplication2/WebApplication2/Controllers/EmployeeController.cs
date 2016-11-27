@@ -51,17 +51,20 @@ namespace WebApplication2.Controllers
         // GET: Employee/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            ViewBag.DeptId = new SelectList(DbContext.Departments, "DeptID", "DeptName");
+            var employee= DbContext.Employees.Where(x => x.EmpId == id).FirstOrDefault();
+            return View(employee);
         }
 
         // POST: Employee/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, EmployeeModel emp)
         {
             try
             {
                 // TODO: Add update logic here
-
+                DbContext.Entry(emp).State = System.Data.Entity.EntityState.Modified;
+                DbContext.SaveChanges();
                 return RedirectToAction("Index");
             }
             catch
