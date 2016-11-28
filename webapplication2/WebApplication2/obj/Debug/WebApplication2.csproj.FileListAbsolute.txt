@@ -145,6 +145,6 @@ C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\bin\Micro
 C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
 C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+C:\Users\abhijeet\Documents\GitHub\MVC\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache

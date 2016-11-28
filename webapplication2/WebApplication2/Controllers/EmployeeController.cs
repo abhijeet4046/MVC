@@ -76,16 +76,20 @@ namespace WebApplication2.Controllers
         // GET: Employee/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var employee = DbContext.Employees.Where(x => x.EmpId == id).FirstOrDefault();
+            return View(employee);
         }
 
         // POST: Employee/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, EmployeeModel emp)
         {
             try
             {
                 // TODO: Add delete logic here
+                var employee = DbContext.Employees.Where(x => x.EmpId == id).FirstOrDefault();
+                DbContext.Employees.Remove(employee);
+                DbContext.SaveChanges();
 
                 return RedirectToAction("Index");
             }
